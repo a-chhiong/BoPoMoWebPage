@@ -18,7 +18,7 @@
 .hanji {
     font-size: 40px;
     line-height: 1.8;
-    letter-spacing: 2px
+    letter-spacing: 2px;
 }
 
 .inter {
@@ -142,8 +142,6 @@ fieldset {
    ZHUYIN-SPECIFIC STYLES Horizontal Hanji & Vertical Zhuyin
    ========================================================================== */
 
-
-/* --- Case(0): Special Special Handling (Keep <bpmf> logic) --- */
 /* We keep this isolated so it doesn't break your specific layout requirements */
 .hanji.lr.v.after {
     line-height: 1.2;
@@ -172,7 +170,7 @@ fieldset {
     /* transform: translateY(10%);  */
 
     /* Typography */
-    font-family: 'BopomofoRuby';
+    font-family: BopomofoRuby;
     font-size: 25%;
     color: #666;
     height: 3.85em;
