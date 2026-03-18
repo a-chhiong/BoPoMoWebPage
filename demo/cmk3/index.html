@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+	<meta charset="utf-8"></head>
+	<link type="text/css" rel="stylesheet" href="index.css" charset="utf8">
+	<title>注音符號調號之數位排版</title>
+<body>
+    <div id="reader" class="mode-char">
+        <bpmf zhuyin="ㄓㄨˋ" pinyin="zhù">注</bpmf><bpmf zhuyin="ㄧˋ" pinyin="yì">意</bpmf>！
+        <br>
+        「<bpmf zhuyin="ㄌㄩˇ" pinyin="lǚ">旅</bpmf><bpmf zhuyin="ㄒㄧㄥˊ" pinyin="xíng">行</bpmf><bpmf zhuyin="ㄓㄜˇ" pinyin="zhě">者</bpmf><bpmf zhuyin="ㄧ" pinyin="yī">一</bpmf><bpmf zhuyin="ㄏㄠˋ" pinyin="hào">號</bpmf>」
+        <br/>
+		<bpmf zhuyin="ㄍㄜˋ" pinyin="gè">各</bpmf><bpmf zhuyin="ㄨㄟˋ" pinyin="wèi">位</bpmf><bpmf zhuyin="ㄉㄡ" pinyin="dōu">都</bpmf><bpmf zhuyin="ㄏㄠˇ" pinyin="hǎo">好</bpmf><bpmf zhuyin="˙ㄅㄚ" pinyin="ba">吧</bpmf>？
+        <br/>
+		<bpmf zhuyin="ㄨㄛˇ" pinyin="wǒ">我</bpmf><bpmf zhuyin="˙ㄇㄣ" pinyin="men">們</bpmf><bpmf zhuyin="ㄉㄡ" pinyin="dōu">都</bpmf><bpmf zhuyin="ㄏㄣˇ" pinyin="hěn">很</bpmf><bpmf zhuyin="ㄒㄧㄤˇ" pinyin="xiǎng">想</bpmf><bpmf zhuyin="ㄋㄧㄢˋ" pinyin="niàn">念</bpmf><bpmf zhuyin="ㄋㄧˇ" pinyin="nǐ">你</bpmf><bpmf zhuyin="˙ㄇㄣ" pinyin="men">們</bpmf>。
+        <br/>
+		<bpmf zhuyin="ㄧㄡˇ" pinyin="yǒu">有</bpmf><bpmf zhuyin="ㄎㄨㄥˋ" pinyin="kòng">空</bpmf><bpmf zhuyin="ㄐㄧㄡˋ" pinyin="jiù">就</bpmf><bpmf zhuyin="ㄌㄞˊ" pinyin="lái">來</bpmf><bpmf zhuyin="ㄨㄢˊ" pinyin="wán">玩</bpmf>。
+    </div>
+
+    <div class="controls">
+        <button onclick="setMode('mode-char')">Characters only</button>
+        <button onclick="setMode('mode-zhuyin')">With Zhuyin</button>
+        <button onclick="setMode('mode-zhuyin-only')">Zhuyin only</button>
+        <button onclick="setMode('mode-pinyin')">With Pinyin</button>
+        <button onclick="setMode('mode-pinyin-only')">Pinyin only</button>
+    </div>
+
+    <script>
+        function setMode(mode) {
+            const reader = document.getElementById('reader');
+            reader.className = mode;
+        }
+    </script>
+</body>
+</html>

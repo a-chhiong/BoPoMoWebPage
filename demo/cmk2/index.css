@@ -58,7 +58,7 @@ rt {
     margin-right: 0.5em; /* Space for the vertical Zhuyin on the right */
 }
 .han-zhuyin.lr.v.after bpmf::after {
-    content: attr(data-after);
+    content: attr(zhuyin);
     position: absolute;
 
     /* Core Layout */
